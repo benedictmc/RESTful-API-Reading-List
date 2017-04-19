@@ -12,11 +12,11 @@ List = require('./models/list');
 mongoose.connect('mongodb://127.0.0.1/listDB');
 var db = mongoose.connection;
 
-
+    
 //http requests
 //Requests homepage and calls function
 app.get('/', function (req, res) {
-    res.send('Please use API yo yo');
+    res.send('Please use API');
 } );
 
 app.get('/api/list', function (req, res){
@@ -33,7 +33,6 @@ app.get('/api/list/:_id', function (req, res){
     	if(err){
     		throw err;
     	}
-
     	res.json(readingList);
     });
 } );

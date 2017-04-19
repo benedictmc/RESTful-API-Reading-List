@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+	<title>Reading List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<!-- /.container -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="/app.js"></script>
+	<script src="/controllers/list.js"></script>
+</head>
+	<body>
+		<div class="header">
+	    <div class="heading_wrap">
+	        <h1>Reading List</h1>
+	    </div>
+	</div>
+	<div class="nav-wrap">
+	    <ul class="nav nav-acts-pills nav-stacked ">
+	        <li class="active">
+	            <a href="#/list">View List</a>
+	        </li>
+	        <li class="active">
+	            <a href="#/addtoList">Add to List</a>
+	        </li>
+	        <li class="active">
+	            <a href="#/list_E">Edit item from List</a>
+	        </li>
+	        <li class="active">
+	            <a href="#/list_D">Delete item from List</a>
+	        </li>
+	    </ul>
+	</div>
+
+	<div ng-view="" class="content-wrap" >/div>
+	</body>
+</html>
